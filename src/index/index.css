@@ -169,6 +169,23 @@ img{
     font-size: 25px;
     font-weight: bold;
 }
-.body_wrap3{
-
+.offer{
+    margin-left: 570px;
+    margin-right: 15px;
+    clear: both;
+}
+.offer_name{
+    font-size: 18px;
+    margin-top: 55px;
+    padding-bottom: 10px;
+    line-height: normal;
+}
+.offer_place{
+    color: #b8bcc3;
+    padding-bottom: 10px;
+    line-height: normal;
+    font-size: 14px;
+}
+.offer_pay{
+    font-weight: bold;
 }

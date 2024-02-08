@@ -146,7 +146,6 @@ img{
     margin-top: 70px;
 }
 .body_img{
-    display: inline;
     float: right;
     margin-right: 420px;
     position: relative;
@@ -168,24 +167,207 @@ img{
     margin-top: 50px;
     font-size: 25px;
     font-weight: bold;
+    margin-bottom: 50px;
 }
-.offer{
-    margin-left: 570px;
-    margin-right: 15px;
-    clear: both;
+#main_section {
+    width: 768px;
+    height: 1736.56px;
 }
-.offer_name{
+#main > div {
+    width: 768px;
+    height: 1736.56px;
+    margin: 0 auto;
+}
+
+#grid {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 18px;
+    column-gap: 30px;
+}
+.item {
+    display: flex;
+    width: 368.63px;
+    height: 128px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.item > img {
+    width: 108px;
+    height: 108px;
+    border-radius: 0.5rem;
+}
+.item > div {
+    margin-left: 16px;
+}
+.work_name{
     font-size: 18px;
-    margin-top: 55px;
-    padding-bottom: 10px;
-    line-height: normal;
+    margin-bottom: 7px;
 }
-.offer_place{
-    color: #b8bcc3;
-    padding-bottom: 10px;
-    line-height: normal;
-    font-size: 14px;
+.work_adress{
+    font-size: .875rem;
+    color: #868b94;
+    margin-bottom: 0.25rem;
 }
-.offer_pay{
+.work_price{
+    line-height: 1.36;
+    font-size: 1rem;
     font-weight: bold;
+}
+#free_work{
+    display: flex;
+    align-items: center;
+    margin-left: 33px;
+}
+#free_work div {
+    line-height: 1.3;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #212124;
+}
+#free_work img {
+    width: 69.75px;
+    height: 56.69px;
+    margin-right: 20px;
+    border-radius: 0.5rem;
+}
+.free_button {
+    height: 40px;
+    line-height: 1.4;
+    font-size: .875rem;
+    margin-left: 40px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.5rem 0.625rem;
+    background-color: #ff6f0f;
+    border: 0;
+    border-radius: 0.25rem;
+}
+.QA_button{
+    line-height: 1.4;
+    font-size: .875rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.5rem 0.625rem;
+    background-color: #ff6f0f24;
+    border: 0;
+    border-radius: 0.25rem;
+    color: #ff6f0f;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.item:nth-child(11) {
+    grid-column: 1 / 3;
+    width: 800px;
+}
+.item:nth-child(11) > div {
+    background: #f7f1eb;
+    width: 800px;
+    height: 112.69px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+.item:nth-child(22) {
+    grid-column: 1 / 3;
+    width: 800px;
+}
+.item:nth-child(22) > div {
+    background: #009ceb1a;
+    width: 800px;
+    height: 112.69px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+#footer{
+    background-color: #fff;
+    color: #212124;
+    border-top: 1px solid #eaebee;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100vw;
+    margin-top: 80px;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+}
+.footer2{
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.ft_section{
+    padding: 3rem 0;
+    display: block;
+}
+.ft_section2{
+    float: right;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.ekdrms1{
+    line-height: 1.4;
+    font-size: .875rem;
+    font-weight: 700;
+}
+.list{
+    line-height: 1.4;
+    font-size: .875rem;
+    display: flex;
+    max-width: 48rem;
+}
+.list_1{
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 33%;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+}
+.list_2{
+    width: fit-content;
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    color: black;
+}
+.last{
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem 0 6.25rem;
+    border-top: 1px solid #eaebee;
+}
+.last0{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: block;
+}
+.last1{
+    line-height: 1.5;
+    font-size: .813rem;
+    margin-bottom: 1rem;
+    color: #868b94;
+}
+.last2{
+    display: flex;
+    align-items: center;
+}
+.last3{
+    margin: 0 0.25rem;
+}
+.last4{
+    font-style: normal;
+    display: block;
 }

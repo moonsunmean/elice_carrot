@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*****************/
+/** header CSS **/
+/***************/
+#intro {
+    width: 100%;
+    height: 70px;
+   /* background-color: yellow;*/
+}
+
+#intro h2 {
+    float: left;
+    display: inline;
+    width: 10%;
+    height: 70px;
+    background-color: white;
+
+}
+
+#intro h2 a {
+    display: inline;
+     text-align: center;
+    float: right;
+    color : #ff6f0f;
+    width: 40%;
+    height: 45px;
+    padding: 25px 0 0 0px;
+    font-size: 18px;
+    background-color: white;
+
+}
+#intro h2 img {
+    display: inline;
+    float: right;
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    padding: 15px 0 0  10px;
+    font-size: 10px;
+}
+
+
+#intro nav{
+    float: left;
+    width: 90%;
+    height: 70px;
+   /* background-color: pink;*/
+}
+
+
+#intro nav ul li {
+    width: 10%;
+    height: 70px;
+    /* display: inline-block;*/
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    background-color: white;
+}
+
+
+
+#intro nav ul li.logo a {
+    color: #ff6f0f;
+}
+
+#intro nav ul li.two a {
+    color: #ff6f0f;
+}
+#intro nav ul li.three {
+    width: 7%;
+}
+
+#intro nav ul li.four {
+
+    width: 13%;
+}
+
+#intro nav ul li.five {
+    /*background-color: #efeff6;*/
+    width: 13%;
+}
+#intro nav ul li.search-text {
+  width: 34%;
+  padding: 0 0 0 30px ;
+}
+#intro nav ul li.search {
+  width: 16%;
+  padding: 0 0 0 0;
+}
+
+input {
+  width: 85%;
+  height: 30px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 3px 0 3px 25px ;
+  font-size: 16px;
+  background-color: #f2f3f6;
+}
+
+button{
+     background-color: white;
+     width: 100px;
+     padding: 8px 12px 8px 12px;
+     font-size: 16px;
+     font-weight: bold;
+     border: 1px solid #bbb;
+      border-radius: 8px;
+}
+
+/*
+img {
+  position : absolute;
+  width: 17px;
+  top: 10px;
+  right: 12px;
+  margin: 0;
+}*/
+
+#intro nav ul li a {
+    font-size: 18px; font-weight: bold;
+    transition-property: color;
+    transition-duration:  0.3s;
+}
+
+#intro nav ul li a:hover{
+    color: #917f7f;
+}
+/*****************/
+/**  main CSS  **/
+/***************/
+
+#main article.main_arc{
+    background-color: #f7f1eb;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px 16px;
+}
+.arc{
+    padding:0 0 0 10px;
+    margin: 64px 200px 0 260px;
+}
+#main article.main_arc span{
+    background-color: #f7f1eb;
+    width: 35%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding : 70px 5px 0px 100px;
+    float : right;
+    margin-left : 100px;
+
+}
+#main article.main_arc span h1{
+ padding:0px 0px 25px 0px;
+ width:70%;
+ font-size: 35px;
+}
+
+#main article.main_arc img{
+    background-color: #f7f1eb;
+    width: 30%;
+    float : right;
+    height:250px;
+    padding : 100px 180px 0px 20px;
+    margin-right: 50px;
+}
+.second_arc h2{
+    padding-top: 45px;
+    padding-bottom: 30px;
+    font-size:35px;
+    text-align: center;
+}
+
+.second_menu{
+    padding: 0 50px 0 0px;
+    width:100%;
+    display: flex;
+    justify-content: center; /* 요소들 사이에 공간을 균등하게 배분 */
+    flex-wrap: wrap; /* 필요한 경우 요소를 다음 줄로 감싸게 함 */
+
+}
+.second_menu li{
+    padding-right: 5px;
+}
+
+.second_menu button{
+     display: inline-block;
+     background-color: white;
+     width: auto;
+     height:20px
+     padding: 8px 12px 8px 12px;
+     font-size: 13px;
+     border: 1px solid #bbb;
+     border-radius: 14px;
+     text-align: center;
+}
+
+button:hover {
+     background-color: #f2f3f6;
+}
+button:active {
+    background-color: black; /* 클릭 시 배경 색상 */
+    color: white; /* 클릭 시 글자 색상, 필요에 따라 변경 */
+}
+
+
+.neighbor_co_box{
+    padding: 30px 10px 30px 10px;
+    margins : 0 0 0 0px;
+}
+
+.neighbor_co_box ul{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.neighbor_co_box ul li{
+    flex: 1 1 40%;
+    padding: 0px 20px;
+
+}
+.neighbor_co_box ul li a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    border-bottom: 1px solid #ddd;
+    padding :10px 5px 10px 0px;
+    margin-bottom 10px;
+}
+.neighbor_co_box ul li a:hover{
+    background-color: #f2f3f6;
+}
+
+.box {
+  flex: 0.5 1.5; /* 이미지와 내용 영역이 각각 반반 차지하도록 설정 */
+  border-radius: 70%;
+  align-items: center;
+  overflow: hidden;
+}
+.box2 {
+  display: flex;
+  flex-direction: column; /* 자식 요소들을 세로로 나열 */
+  justify-content: center; /* 세로 방향 중앙 정렬 */
+}
+
+.box img {
+  width: 100%; /* 이미지의 원래 비율을 유지하면서 가로 영역 채움 */
+  height: 100%; /* 높이를 box 높이로 맞춤 */
+  object-fit: cover; /* 이미지가 box를 꽉 채우도록 조정 */
+}
+
+.box2 {
+  flex: 2; /* 내용 영역이 이미지 영역보다 넓게 설정 */
+  padding-left: 20px; /* 이미지와 텍스트 사이의 여백 */
+}
+
+.box2 .market_title, .box2 .content, .box2 .review {
+  margin-bottom: 5px; /* 제목, 내용, 후기 사이의 간격 */
+}
+.neighbor_co_box li .box2 .content{
+   font-size:18px;
+}
+
+
+/*************************/
+.third_arc {
+    padding: 20px 0; /* 상단과 하단의 패딩 조정 */
+}
+.third_arc h2 {
+    padding: 30px 0; /* 상단과 하단의 패딩 조정 */
+    font-size:35px;
+}
+
+
+.third_arc ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 요소들을 적절히 분산시키기 위해 */
+    padding: 0;
+}
+
+.third_arc ul li {
+    flex: 1 1 calc(50% - 20px); /* 각 항목의 기본 크기를 설정하여, 한 줄에 두 개씩 나오도록 함 */
+    margin: 10px; /* 항목들 사이의 수평 간격 조정 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 카드에 그림자 효과 추가 */
+    background-color: #fff; /* 카드 배경색 설정 */
+    border-radius: 8px; /* 카드 모서리 둥글게 */
+}
+.third_arc ul li:hover {
+     background-color: #f2f3f6;
+}
+
+.review_card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user_info img {
+    width: 50px; /* 사용자 이미지 크기 조정 */
+    height: 50px; /* 사용자 이미지 크기 조정 */
+    border-radius: 50%; /* 이미지를 원형으로 만듬 */
+    margin-right: 10px;
+}
+
+.user_name {
+    font-weight: bold;
+}
+
+.user_verification {
+    font-size: 0.8em; /* 인증 횟수의 글씨 크기 조정 */
+}
+
+.review_content {
+    font-size: 0.9em; /* 리뷰 내용의 글씨 크기 조정 */
+    margin-bottom: 10px;
+}
+
+.additional_info {
+    display: flex;
+    align-items: center;
+    border-radius: 8px; /* 추가 이미지 모서리 둥글게 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 카드에 그림자 효과 추가 */
+}
+
+.additional_info img {
+    width: 80px; /* 추가 이미지 크기 조정 */
+    height: 80px; /* 추가 이미지 크기 조정 */
+    margin-right: 10px;
+    border-radius: 8px; /* 추가 이미지 모서리 둥글게 */
+}
+
+.detail_title {
+    font-weight: bold;
+    display: block; /* 세부 제목을 별도의 라인에 표시 */
+}
+
+.detail_stats {
+    font-size: 0.8em; /* 세부 통계의 글씨 크기 조정 */
+    color: #777; /* 세부 통계의 글씨 색상 조정 */
+}
+
+
+.last_arc{
+    display:block;
+    background-color: #f7f1eb;
+    width:100%;
+    height:130px;
+    border-radius: 10px;
+    margin : 30px 0 30px 0;
+}
+
+.last_arc div{
+    padding-top:20px;
+    display:flex;
+    width:20%;
+    float:left;
+    height:100px;
+}
+
+.last_arc .last_1{
+    width:15%;
+}
+.last_arc .last_1 img{
+    width:73%;
+
+}
+
+.last_arc .last_2{
+    display:flex;
+    width:50%;
+    height:80px;
+    padding-top:40px;
+}
+
+.last_arc div.last_3{
+    display:flex;
+    align-items:center;
+    width:30%;
+    padding: 15px 15px 15px 0;
+}
+
+.last_arc div.last_3 a{
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content: center;
+    width:95%;
+    height:45px;
+    color:white;
+    background-color: #ff6f0f;
+    border-radius: 6px;
+    font-size:20px;
+}
+
+/*****************/
+/** footer CSS **/
+/***************/
+#footer{
+    width:100%;
+}
+#footer div{
+    width:50%;
+}
+#footer.co_document{
+    border-top: 1px solid
+    padding-top : 50px;
+}
+.co_document span{
+    padding: 5px 0px 0px 50px;
+    font-size: 13px;
+}
+
+.co_document span.qna{
+   display: block;
+    height:30px;
+    padding: 0px 0px 0px 50px;
+    margin-top:20px;
+    font-size: 13px;
+}
+
+.co_document span.qna a{
+    padding-right: 8px;
+}
+
+.co_sns img{
+    float:left;
+    width:5%;
+    height:25px;
+}
+
+.foot_info{
+    display: block;
+    height:30px;
+    width:80%;
+    padding: 0px 0px 10px 50px;
+    font-size: 13px;
+}
+.foot_info a{
+    padding-right: 8px;
+}
+
+
+
+/* 화면이 200% 이상 확대되었을 때의 스타일 */
+@media screen and (min-width: 1700px) {
+    /* 한 줄에 한 개의 카드만 표시 */
+    .third_arc ul li, .neighbor_co_box ul li {
+        flex-basis: 100%; /* flex 아이템의 기본 크기를 100%로 설정 */
+        max-width: 100%; /* 최대 너비도 100%로 설정 */
+        margin: 10px 0; /* 위 아래 마진을 설정하여 카드 사이의 간격을 조정 */
+    }
+
+    /* 카드 내용이 중앙에 오도록 justify-content를 수정 */
+    .neighbor_co_box ul li a, .third_arc ul li a .review_card {
+        justify-content: flex-start;
+    }
+}

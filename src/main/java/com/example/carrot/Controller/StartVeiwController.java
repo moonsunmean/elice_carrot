@@ -10,4 +10,8 @@ public class StartVeiwController {
     public String getstartForm(){
         return "locationCo";
     }
+    @GetMapping("/secondhand")
+    public String getsecondhandForm(){
+        return "secondhand";
+    }
 }

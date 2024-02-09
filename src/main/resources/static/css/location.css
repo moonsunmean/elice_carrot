@@ -466,6 +466,7 @@ button:active {
 /***************/
 #footer{
     width:100%;
+    margin: 40px 350px 0 350px;
 }
 #footer div{
     width:50%;
@@ -475,14 +476,14 @@ button:active {
     padding-top : 50px;
 }
 .co_document span{
-    padding: 5px 0px 0px 50px;
+    padding: 5px 0px 0px 0px;
     font-size: 13px;
 }
 
 .co_document span.qna{
    display: block;
     height:30px;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 0px;
     margin-top:20px;
     font-size: 13px;
 }
@@ -501,7 +502,7 @@ button:active {
     display: block;
     height:30px;
     width:80%;
-    padding: 0px 0px 10px 50px;
+    padding: 0px 0px 10px 0px;
     font-size: 13px;
 }
 .foot_info a{

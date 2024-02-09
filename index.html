@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>당신 근처의 당근</title>
+    <script src="https://kit.fontawesome.com/91b7c18548.js" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('#logo, .header_menu').forEach(function(button) {
+        button.addEventListener('click', function() {
+        window.location.href = 'https://example.com'; // 넘어갈 사이트의 URL 입력
+        });});
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var googlePlayButton = document.querySelector('.app_download_1');
+          var appStoreButton = document.querySelector('.app_download_2');
+          var googlePlayButton_2 = document.querySelector('.app_download_3');
+          var appStoreButton_2 = document.querySelector('.app_download_4');
+          googlePlayButton.addEventListener('click', function() {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.towneers.www'; // 안드로이드용 앱 설치 사이트 URL 입력
+          });
+          appStoreButton.addEventListener('click', function() {
+            window.location.href = 'https://apps.apple.com/us/app/karrot-buy-sell-locally/id1018769995'; // iOS용 앱 설치 사이트 URL 입력
+          });
+          googlePlayButton_2.addEventListener('click', function() {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.towneers.www'; // 안드로이드용 앱 설치 사이트 URL 입력
+          });
+          appStoreButton_2.addEventListener('click', function() {
+            window.location.href = 'https://apps.apple.com/us/app/karrot-buy-sell-locally/id1018769995'; // iOS용 앱 설치 사이트 URL 입력
+          });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var buttons = document.querySelectorAll('.gray_button');
+          buttons.forEach(function(button) {
+          button.addEventListener('click', function() {
+          var url = button.dataset.url;
+          if(url){
+            window.location.href = url;
+            }
+          });
+          }); });
+    </script>
+</head>
+<body>
+
+<div id="header">
+    <div id="header_wrap">
+        <div id="header_content">
+            <img id = "logo" src="./logo.png" alt="당근마켓 로고">
+        </div>
+        <div id="header_content">
+            <button class="header_menu">중고거래</button>
+        </div>
+        <div id="header_content">
+            <button class="header_menu">동네업체</button>
+        </div>
+        <div id="header_content">
+            <button class="header_menu">알바</button>
+        </div>
+        <div id="header_content">
+            <button class="header_menu">부동산 직거래</button>
+        </div>
+        <div id="header_content">
+            <button class="header_menu">중고차 직거래</button>
+        </div>
+        <div id="header_content">
+            <input class="search_input" type="text" placeholder="물품이나 동네를 검색해보세요">
+                <button type="submit" class="chat_button">채팅하기</button>
+        </div>
+    </div>
+</div>
+<div id="body">
+
+    <div class="body_content_1">
+        <div class="body_wrap">
+            <h2 class="big">당신 근처의 <br>지역 생활 커뮤니티</h2>
+            <p class="small">동네라서 가능한 모든 것<br>당근에서 가까운 이웃과 함께해요.</p>
+            <div >
+                <div class="app_img">
+                    <div class="app_download_1">
+                        <img src="./google.png">
+                        <p>Google Play</p>
+                    </div>
+                    <div class="app_download_2">
+                        <img src="./apple.png">
+                        <p>App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_wrap">
+            <img class="image_1" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-top-e765d561ee9df7f5ab897f622b8b5a35aaa70314f734e097ea70e6c83bdd73f1.webp" width="700" height="auto">
+        </div>
+    </div>
+
+    <div class="body_content_2">
+
+        <div class="body_wrap">
+            <img class="image_2" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-1-c84dd43a3a50742bc296bd36e8b9b1c4a487b8d36aaf67e7f90ecce80201cf60.webp " width="700" height="auto">
+        </div>
+        <div class="body_wrap">
+            <h2 class="medium">믿을만한 <br>이웃 간 중고거래</h2>
+            <p class="small_2">동네 주민들과 가깝고 따뜻한 거래를 <br>지금 경험해보세요.</p>
+            <button class="gray_button" date-url = "https://www.example1.com">인기매물 보기</button>
+            <button class="gray_button" date-url = "https://www.example2.com">믿을 수 있는 중고거래</button>
+        </div>
+    </div>
+
+    <div class="body_content_3">
+        <div class="body_wrap">
+            <h2 class="medium_2">이웃만 아는 <br>동네 정보와 이야기</h2>
+            <p class="small_3">우리 동네의 다양한 정보와 이야기를 <br>공감과 댓글로 나누어요</p>
+            <ul class="home-story-list">
+                <li class="home-story-list-item">
+                    <div class="icon-story icon-story-01"></div>
+                    <div class="text-s text-bold mt-3 mb-2">동네모임</div>
+                    <div class="item-desc">근처 이웃들과 동네<br>이야기를 해보세요.</div>
+                </li>
+                <li class="home-story-list-item">
+                    <div class="icon-story icon-story-02"></div>
+                    <div class="text-s text-bold mt-3 mb-2">동네질문</div>
+                    <div class="item-desc">궁금한 게 있을 땐<br>이웃에 물어보세요.</div>
+                </li>
+                <li class="home-story-list-item">
+                    <div class="icon-story icon-story-03"></div>
+                    <div class="text-s text-bold mt-3 mb-2">동네분실센터</div>
+                    <div class="item-desc">무언가를 잃어버렸다면<br>글을 올려보세요.</div>
+                </li>
+            </ul>
+        </div>
+        <div class="body_wrap">
+            <img class="image_3" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-2-78a84106155b4b2c341b6425515a90782dc08a6f443ba0bb622700ef788d2e19.webp " width="700" height="auto">
+        </div>
+    </div>
+
+    <div class="body_content_2">
+
+        <div class="body_wrap">
+            <img class="image_4" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-3-fa126bf72868e1a60f6a67dde54d8a39d51e70ee5df415ebf0ab3175e23d8ee1.webp " width="700" height="auto">
+        </div>
+        <div class="body_wrap">
+            <h2 class="medium">걸어서 10분!<br>동네 알바 구하기</h2>
+            <p class="small_2" style="margin-left: 2.5rem;">당근하듯 쉽고, 편하게<br>당근 알바로 동네 알바를 구할 수 있어요.</p>
+            <button class="gray_button" style="margin-top: 20px;">내근처 알바 보기</button>
+
+        </div>
+    </div>
+
+    <div class="body_content_3" style="background-color: #fbf7f2">
+        <div class="body_wrap" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2 class="medium_2">내 근처에서 찾는 <br>동네업체</h2>
+            <p class="small_3" style="margin-left: 8.0rem;">이웃들의 추천 후기를 확인하고 <br>동네 곳곳의 업체들을 찾을 수 있어요.</p>
+            <button class="gray_button" style="margin-top: 50px; margin-left: 300px;">당근 동네업체 보기</button>
+        </div>
+        <div class="body_wrap">
+            <img class="image_5" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-business-cc45c805de4a639e259aea606640042d09bccf358e8d20f50af325dd994aceef.webp " width="700" height="auto">
+        </div>
+    </div>
+
+    <section class="info">
+        <div class="info1">
+            <ul>
+                <li>중고거래</li>
+                <li>동네가게</li>
+                <li>당근알바</li>
+                <li>부동산 직거래</li>
+                <li>중고차 직거래</li>
+            </ul>
+            <ul>
+                <li>당근비즈니스</li>
+                <li>채팅하기</li>
+            </ul>
+            <ul>
+                <li>자주 묻는 질문</li>
+                <li>회사 소개</li>
+                <li>인재 채용</li>
+            </ul>
+        </div>
+        <div >
+            <p class="app_tit">당근 앱 다운로드</p>
+            <div>
+                <div class="app_img_2">
+                    <div class="app_download_3">
+                        <img src="./google.png">
+                        <p>Google Play</p>
+                    </div>
+                    <div class="app_download_4">
+                        <img src="./apple.png">
+                        <p>App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<footer class="footer_box">
+    <div class="footer">
+        <div class="sns_lan">
+            <a href="https://www.facebook.com/daangn" target="_blank" class="fa-brands fa-facebook"<i></i></a>
+            <a href="https://www.instagram.com/daangnmarket/" target="_blank" class="fa-brands fa-instagram"<i></i></a>
+            <a href="https://www.youtube.com/channel/UC8tsBsQBuF7QybxgLmStihA" target="_blank" class="fa-brands fa-youtube"<i></i></a>
+
+            <select>
+                <option>한국</option>
+                <option value="https://uk.karrotmarket.com">영국</option>
+                <option value="https://ca.karrotmarket.com">캐나다</option>
+                <option value="https://us.karrotmarket.com">미국</option>
+                <option value="https://jp.karrotmarket.com">일본</option>
+            </select>
+        </div>
+        <div>
+            <p class="info2">
+                <span class="txt_em">대표</span> 김용현, 황도연 | <span class="txt_em">사업자번호</span> 375-87-00088<br>
+                <span class="txt_em">직업정보제공사업 신고번호</span> 2016-서울서초-0051<br>
+                <span class="txt_em">주소</span> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)<br>
+                <span class="txt_em">전화</span> 1544-9796 | <span class="txt_em">고객문의</span> cs@daangnservice.com
+            </p>
+            <div class="txt_em_1">
+                <a href="#">제휴 문의</a>
+                <a href="#">광고 문의</a>
+                <a href="#">PR 문의</a>
+                <a href="#">IR 문의</a>
+            </div>
+            <div class="txt_em_1">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">위치기반서비스 이용약관</a>
+                <a href="#">이용자보호 비전과 계획</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

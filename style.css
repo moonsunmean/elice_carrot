@@ -377,7 +377,7 @@ body{
     border: none;
 }
 
-
+/* footer */
 
 .info {
     display: flex;
@@ -445,4 +445,41 @@ body{
 .fa-brands {
     height: 15px;
     filter: grayscale(100%);
+}
+
+.app_tit {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.app_img_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'SUITE-Regular';
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 30px;
+}
+.app_img_2 img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.app_download_1 {
+    margin-right: 10px;
+}
+.app_download_2 {
+    margin-left: 10px;
+}
+.app_download_3 {
+    margin-left: 10px;
+}
+.app_download_4 {
+    margin-left: 10px;
+}
+
+.image_1{
+    margin-bottom: 60px;
 }

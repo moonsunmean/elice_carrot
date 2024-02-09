@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>고객센터</title>
+  </head>
+  <body id="faqs">
+    <div id="faqs-wrapper">
+      <a href="#" id="title">
+        <img class="logo" src="assets/daangn.svg" alt="당근마켓 로고" />
+        <div class="title">고객센터</div>
+      </a>
+    </div>
+    <div id="content">
+      <h1>안녕하세요,<br />무엇을 도와드릴까요? 🥕</h1>
+      <div class="search">
+        <form action="#">
+          <input
+            id="search-bar"
+            type="text"
+            autocomplete="off"
+            placeholder="궁금한 것을 검색해보세요."
+          />
+          <ul id="search-suggestions"></ul>
+        </form>
+        <img class="search-icon" src="assets/search.svg" alt="검색 아이콘" />
+      </div>
+      <div id="tag-list">
+        <a>채팅</a>
+        <a>알림</a>
+        <a>검색</a>
+        <a>당근페이</a>
+        <a>당근알바</a>
+        <a>중고차 직거래</a>
+        <a>운영정책</a>
+      </div>
+      <h2>자주 묻는 질문</h2>
+      <ul id="item-list" class="faqs">
+        <li>
+          <a href="#">동일한 게시글을 올려서 내 게시글이 미노출 됐어요</a>
+        </li>
+        <li>
+          <a href="#">동네인증이 안 돼요!</a>
+        </li>
+        <li>
+          <a href="#">당근 광고는 어떻게 만드나요?</a>
+        </li>
+        <li>
+          <a href="#">당근페이는 어떻게 쓰나요?</a>
+        </li>
+        <li>
+          <a href="#">비즈프로필은 무엇인가요?</a>
+        </li>
+      </ul>
+      <h2>카테고리에서 찾기</h2>
+      <ul id="item-list" class="category">
+        <li><a href="#">계정/인증/로그인</a></li>
+        <li><a href="#">중고거래</a></li>
+        <li><a href="#">당근페이</a></li>
+        <li><a href="#">비즈프로필</a></li>
+        <li><a href="#">상품판매</a></li>
+        <li><a href="#">광고</a></li>
+        <li><a href="#">동네생활</a></li>
+        <li><a href="#">당근알바</a></li>
+        <li><a href="#">전문가모드 광고</a></li>
+        <li><a href="#">기타</a></li>
+      </ul>
+      <div class="feedback">
+        <h2>도움이 필요하신가요?</h2>
+        <a href="#" class="cta">문의하기</a>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <ul id="info-list">
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">청소년 보호정책</a></li>
+      <li><a href="#">회사정보</a></li>
+      <li id="copyright">© 당근마켓</li>
+    </ul>
+  </footer>
+  <script src="assets/search.js"></script>
+</html>

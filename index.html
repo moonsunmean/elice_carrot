@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <script src="./index.js" defer></script>
+    <title>당신 근처의 당근마켓</title>
+</head>
+<body>
+<!-- 헤더 영역 -->
+<header>
+    <div id="header_div">
+        <a href="#" id="header_div_a"><span><svg width="65" height="36" viewBox="0 0 65 36" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_47_13130)"><path d="M9.23186 11.6511C4.1335 11.6511 0 15.6932 0 20.7962C0 27.847 9.25838 31.5884 9.23186 31.5783C9.20661 31.5884 18.4637 27.847 18.4637 20.7962C18.4637 15.6969 14.3302 11.6511 9.23186 11.6511ZM9.23186 24.4985C8.54053 24.498 7.86486 24.2924 7.2903 23.9079C6.71573 23.5233 6.26807 22.977 6.00391 22.338C5.73975 21.6991 5.67096 20.9961 5.80623 20.318C5.9415 19.6399 6.27476 19.0171 6.76388 18.5285C7.25299 18.0398 7.87599 17.7072 8.55411 17.5726C9.23223 17.438 9.93502 17.5076 10.5736 17.7725C11.2122 18.0374 11.7579 18.4857 12.1418 19.0608C12.5256 19.6359 12.7304 20.3119 12.7301 21.0034C12.731 21.4632 12.6411 21.9187 12.4656 22.3437C12.2901 22.7687 12.0325 23.1549 11.7075 23.4802C11.3825 23.8055 10.9966 24.0634 10.5718 24.2392C10.1469 24.415 9.69161 24.5053 9.23186 24.5048V24.4985Z" fill="#FF6F0F"></path><path d="M11.3103 0C9.15573 0 7.6554 1.50565 7.41923 3.28415C4.54738 2.4909 2.29688 4.67359 2.29688 7.07354C2.29688 8.9114 3.55978 10.3956 5.24324 10.8781C6.60087 11.2659 9.04586 10.9766 9.04586 10.9766C9.03323 10.383 9.58007 9.73118 10.4237 9.13751C12.8232 7.44996 14.6999 6.65419 14.9891 4.35276C15.2922 1.94523 13.5052 0 11.3103 0Z" fill="#00A05B"></path><path d="M36.7873 14.8305C34.8374 15.4431 31.4616 15.769 28.2905 15.769V11.9114H34.8399V9.03906H24.7783V18.8208C30.2808 18.8208 35.0849 18.1576 37.1132 17.5298L36.7873 14.8305Z" fill="#FF6F0F"></path><path d="M41.4104 7.89453H37.9033V19.1402H41.4104V15.6148H44.2393V12.5467H41.4104V7.89453Z" fill="#FF6F0F"></path><path d="M34.8969 19.1138C31.1814 19.1138 28.4561 21.1613 28.4561 24.1663C28.4561 27.1713 31.1839 29.2188 34.8969 29.2188C38.6098 29.2188 41.3377 27.17 41.3377 24.1663C41.3377 21.1626 38.6124 19.1138 34.8969 19.1138ZM34.8969 26.4058C33.2223 26.4058 31.9657 25.6025 31.9657 24.1613C31.9657 22.72 33.2223 21.9179 34.8969 21.9179C36.5715 21.9179 37.8281 22.7213 37.8281 24.1613C37.8281 25.6012 36.5728 26.4058 34.8969 26.4058Z" fill="#FF6F0F"></path><path d="M51.0698 20.6055H47.4844V28.2133H61.735V25.202H51.0698V20.6055Z" fill="#FF6F0F"></path><path d="M61.2902 8.83301H47.3224V11.8443H57.7692C57.7692 12.5921 57.8046 14.3706 57.4623 16.3916H44.6514V19.5065H64.1002V16.3966H60.6347C61.0995 13.8426 61.2321 11.8519 61.2902 8.83301Z" fill="#FF6F0F"></path></g><defs><clipPath id="clip0_47_13130"><rect width="64.1053" height="36" fill="white"></rect></clipPath></defs></svg></span></a>
+        <nav id="header_div_nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>중고거래</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>동네업체</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>알바</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>부동산 직거래</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>중고차 직거래</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="search_div">
+            <span>
+                <form>
+                    <input type="search" placeholder="물품이나 동네를 검색해보세요">
+                </form>
+            </span>
+            <span>
+                <button type="button">채팅하기</button>
+            </span>
+        </div>
+    </div>
+</header>
+<!-- 메인 영역-->    
+<section class="banner">
+    <div class="banner_txt">
+        <p class="banner_txt_one">믿을 만한<br>이웃 간 중고거래</p>
+        <br>
+        <p class="banner_txt_two">동네 주민들과 가깝고 따뜻한 거래를<br>지금 경험해보세요.</p>
+    </div>
+    <img class="banner_img" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/fleamarket-39d1db152a4769a6071f587fa9320b254085d726a06f61d544728b9ab3bd940a.webp ">
+</section>
+
+<section class="product">
+    <p class="product_tit">중고 거래 인기매물</p>
+    <div class="product_table">
+        <div class="product1">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/5fa06965afb354ba1f8ce7d45c2cdc806418e6410a73f5194e94fa16fd1238ab.jpg?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">게임기 판매</p>
+            <p class="sell_price">25,000원</p>
+            <p class="sell_reg">경기도 성남시 수정구 신흥동</p>
+            <p class="sell_react">관심 46 • 채팅 75</p>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/713687759">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/c82ea65b20cccb58957d009faa3eedf7dc5884fd4c060f5583590529adbaa97e_0.webp?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">산청지리산곶감</p>
+            <p class="sell_price">30,000원</p>
+            <p class="sell_reg">경기도 성남시 분당구 정자동</p>
+            <p class="sell_react">관심 84 • 채팅 81</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/716325968">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/8deca3346274b37ef472a3c9017b4c56a8e384b63c1b72a835c9bb816aac6201.jpg?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">전자렌지</p>
+            <p class="sell_price">5,000원</p>
+            <p class="sell_reg">부산 부산진구 전포동</p>
+            <p class="sell_react">관심 25 • 채팅 89</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/716113677">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/c41f1eca84158af86119037d47817c8d5be864f07bc5339435dafa3a1d32eb6d.jpg?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">두유제조기</p>
+            <p class="sell_price">9,000원</p>
+            <p class="sell_reg">서울 서대문구 홍은동</p>
+            <p class="sell_react">관심 31 • 채팅 56</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/716066051">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/5e6a0241326c8533195ec5210677b704810ad1fa15acf514dd9ba297636e12a1.jpg?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">사주 봐 드립니다!</p>
+            <p class="sell_price">3,000원</p>
+            <p class="sell_reg">경기도 의정부시 고산동</p>
+            <p class="sell_react">관심 52 • 채팅 74</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/715146705">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/2c77db6ae555c9d40d39858c4ca7120f32fdbc51a45f00f97dc714c151fab016.jpg?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">셀린느 엘로이즈백</p>
+            <p class="sell_price">100,000원</p>
+            <p class="sell_reg">서울 서초구 반포2동</p>
+            <p class="sell_react">관심 37 • 채팅 20</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/715353955">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/dae90921080d6930ca41fa9908de6f9d047229da68bf51ca391337bb23e2ea59_0.webp?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">잣팝니다</p>
+            <p class="sell_price">10,000원</p>
+            <p class="sell_reg">전남 순천시 연향동</p>
+            <p class="sell_react">관심 5 • 채팅 46</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/716485421">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/54d4742279c2c927534f688b6a963215e7ef5c586ff8c79e015a41da3b21f390_0.webp?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">갤럭시S20 울트라 256G판매</p>
+            <p class="sell_price">150,000원</p>
+            <p class="sell_reg">충북 청주시 청원구 오창읍</p>
+            <p class="sell_react">관심 21 • 채팅 47</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/716390238">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/e02285b091edd8cabba7aa8a506b3d2eeda078f6e4991d879e23e339f5b9b7bf_0.webp?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">선물 곶감 원가이하로 풀어요</p>
+            <p class="sell_price">22,000원</p>
+            <p class="sell_reg">경기도 김포시 대곶면</p>
+            <p class="sell_react">관심 70 • 채팅 81</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/716650491">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/a2b4cf3d4df0f13b0fad5c5ab099db1e2b274dfe881b2b2de0654bf244030744_0.webp?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">설과일세트 판매합니다</p>
+            <p class="sell_price">30,000원</p>
+            <p class="sell_reg">서울 강남구 일원본동</p>
+            <p class="sell_react">관심 30 • 채팅 35</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/716215230">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/e82290b2b30d377572c3fc1aeb0d8c66e80b12bead0d092b915057fd4848459b_0.webp?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">과일 선물세트 선물 받은거</p>
+            <p class="sell_price">20,000원</p>
+            <p class="sell_reg">서울 동작구 상도제3동</p>
+            <p class="sell_react">관심 19 • 채팅 31</p>
+            </a>
+        </div>
+        <div>
+            <a class="detail" href="https://www.daangn.com/articles/714733306">
+            <img class="sell_img" src="https://dnvefa72aowie.cloudfront.net/origin/article/202402/9d6544fac4f7f5be39af6bc38beb44cf7a96db8cebb0422c43cd04898440c00c_0.webp?q=82&s=300x300&t=crop&f=webp" style="border-radius: 12px; width:223px">
+            <p class="sell_name">신새계 상풍권</p>
+            <p class="sell_price">60,000원</p>
+            <p class="sell_reg">세종시 도담동</p>
+            <p class="sell_react">관심 8 • 채팅 51</p>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="more_item_wrap">
+        <a class="detail" href="https://www.daangn.com/hot_articles">
+        <button class="more_item_btn">인기매물 더보기</button>
+        </a>
+    </div>
+
+    <div class="keyword_wrap">
+        <button class="keyword_title">중고거래 인기검색어</button>
+        <button class="keyword">알바</button>
+        <button class="keyword">순금</button>
+        <button class="keyword">금</button>
+        <button class="keyword">나눔</button>
+        <button class="keyword">아이폰</button>
+        <button class="keyword">24K</button>
+        <button class="keyword">덩어리</button>
+        <button class="keyword">자전거</button>
+        <button class="keyword">노트북</button>
+        <button class="keyword">의자</button>
+    </div>
+    <br>
+
+<!-- 푸터영역 -->
+<section class="info">
+    <div class="info1">
+        <ul>
+            <li>중고거래</li>
+            <li>동네업체</li>
+            <li>당근알바</li>
+            <li>부동산 직거래</li>
+            <li>중고차 직거래</li>
+        </ul>
+        <ul>
+            <li>당근비즈니스</li>
+            <li>채팅하기</li>
+        </ul>
+        <ul>
+            <li>자주 묻는 질문</li>
+            <li>회사 소개</li>
+            <li>인재 채용</li>
+        </ul>
+    </div>
+    <div >
+        <p class="app_tit">당근 앱 다운로드</p>
+        <div class="app_img">
+            <a href="https://www.daangn.com/?source_caller=ui&shortlink=duyc3blt&c=Website&pid=Website&deep_link_value=karrot%3A%2F%2Fopen%3Ffrom%3Dwebsite&af_xp=custom&afdp=karrot://open?from=website" target="_blank">
+            <div class="app_download_1">
+                <img src="./apple.png">
+                <p>App Store</p>
+            </div>
+            </a>
+            <a href="https://www.daangn.com/?source_caller=ui&shortlink=duyc3blt&c=Website&pid=Website&deep_link_value=karrot%3A%2F%2Fopen%3Ffrom%3Dwebsite&af_xp=custom&afdp=karrot://open?from=website" target="_blank">
+            <div class="app_download_2">
+                <img src="./android.png">
+                <p>Google Play</p>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer_box">
+    <div class="footer">
+        <div class="sns_lan">
+            <a href="https://www.facebook.com/daangn" target="_blank"><img class="brands" src="./facebook.png"></a>&nbsp;&nbsp;
+            <a href="https://www.instagram.com/daangnmarket/" target="_blank"><img class="brands" src="./insta.png"></a>&nbsp;&nbsp;
+            <a href="https://www.youtube.com/channel/UC8tsBsQBuF7QybxgLmStihA" target="_blank"><img class="brands" src="./youtube.png"></a>&nbsp;&nbsp;
+            <a href="https://blog.naver.com/daangn" target="_blank"><img class="brands" src="./blog.png"></a>&nbsp;&nbsp;
+            
+        <select class="country">
+                <option>한국</option>
+                <option value="https://uk.karrotmarket.com">영국</option>
+                <option value="https://ca.karrotmarket.com">캐나다</option>
+                <option value="https://us.karrotmarket.com">미국</option>
+                <option value="https://jp.karrotmarket.com">일본</option>
+            </select>
+        </div>
+        <div>
+            <p class="info2">
+                <span class="txt_em">대표</span> 김용현, 황도연 | <span class="txt_em">사업자번호</span> 375-87-00088<br>
+                <span class="txt_em">직업정보제공사업 신고번호</span> J1200020200016<br>
+                <span class="txt_em">주소</span> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)<br>
+                <span class="txt_em">전화</span> 1544-9796 | <span class="txt_em">고객문의</span> cs@daangnservice.com
+            </p>
+            <div class="txt_em_1">
+                <a href="#">제휴 문의</a> 
+                <a href="#">광고 문의</a> 
+                <a href="#">PR 문의</a> 
+                <a href="#">IR 문의</a> 
+            </div>
+            <div class="txt_em_1">
+                <a href="#">이용약관</a> 
+                <a href="#">개인정보처리방침</a> 
+                <a href="#">위치기반서비스 이용약관</a> 
+                <a href="#">이용자보호 비전과 계획</a>
+                <a href="#">청소년 보호 정책</a>  
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</section>
+
+
+
+<!-- 자바스크립트 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var moreItemBtn = document.querySelector(".keyword_title");
+      moreItemBtn.addEventListener("click", function() {
+        // 오늘의 중고 인기 검색어 목록
+        var popularKeywords = [
+          "알바",
+          "순금",
+          "금",
+          "나눔",
+          "24k",
+          "아이폰",
+          "덩어리",
+          "노트북",
+          "자전거",
+          "의자",
+          "당근알바",
+          "레드향",
+          "책상",
+          "귤",
+          "컴퓨터",
+          "아이패드"
+        ];
+
+        var content = "<h2>오늘의 중고 인기 검색어</h2><ul>";
+        popularKeywords.forEach(function(keyword) {
+          content += "<li>" + keyword + "</li>";
+        });
+        content += "</ul>";
+
+        var newWindow = window.open("", "_blank", "width=400, height=400");
+        newWindow.document.write(content);
+      });
+    });
+  </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var product1Element = document.querySelector(".product1");
+      product1Element.addEventListener("click", function() {
+        alert("방금 판매되었습니다");
+      });
+    });
+  </script>
+
+</body>

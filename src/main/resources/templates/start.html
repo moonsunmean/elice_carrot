@@ -2,466 +2,241 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>동네 이웃들이 자주 가는 동네 업체</title>
-    <link rel="stylesheet" href="./css/location.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="icon" type="image/x-icon" href="./img/ico_PC_32x32.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>당신 근처의 당근</title>
+    <script src="https://kit.fontawesome.com/91b7c18548.js" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('#logo, .header_menu').forEach(function(button) {
+        button.addEventListener('click', function() {
+        window.location.href = 'https://example.com'; // 넘어갈 사이트의 URL 입력
+        });});
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var googlePlayButton = document.querySelector('.app_download_1');
+          var appStoreButton = document.querySelector('.app_download_2');
+          var googlePlayButton_2 = document.querySelector('.app_download_3');
+          var appStoreButton_2 = document.querySelector('.app_download_4');
+          googlePlayButton.addEventListener('click', function() {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.towneers.www'; // 안드로이드용 앱 설치 사이트 URL 입력
+          });
+          appStoreButton.addEventListener('click', function() {
+            window.location.href = 'https://apps.apple.com/us/app/karrot-buy-sell-locally/id1018769995'; // iOS용 앱 설치 사이트 URL 입력
+          });
+          googlePlayButton_2.addEventListener('click', function() {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.towneers.www'; // 안드로이드용 앱 설치 사이트 URL 입력
+          });
+          appStoreButton_2.addEventListener('click', function() {
+            window.location.href = 'https://apps.apple.com/us/app/karrot-buy-sell-locally/id1018769995'; // iOS용 앱 설치 사이트 URL 입력
+          });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var buttons = document.querySelectorAll('.gray_button');
+          buttons.forEach(function(button) {
+          button.addEventListener('click', function() {
+          var url = button.dataset.url;
+          if(url){
+            window.location.href = url;
+            }
+          });
+          }); });
+    </script>
 </head>
 <body>
 
-<div class="container">
-
-    <header id="intro">
-
-        <h2>
-            <a href="https://www.daangn.com/kr/nearby-stores/">당근</a>
-            <img src="./img/carrot.png" alt="당근 로고" >
-        </h2>
-
-        <nav>
-            <ul>
-                <!--                <li><img src="carrot.png" alt="로고" ></li>-->
-                <!--                <li class="logo"><a href="https://www.daangn.com/kr/nearby-stores/">당근</a></li>-->
-                <div class="t_menu">
-                    <li class="one"><a href="#">중고거래</a></li>
-                    <li class="two"><a href="#">동네업체</a></li>
-                    <li class="three"><a href="#">알바</a></li>
-                    <li class="four"><a href="#">부동산 직거래</a></li>
-                    <li class="five"><a href="#">중고차 직거래</a></li>
-                </div>
-
-                <div class ="search">
-                    <li class ="search-text"> <input type = "text" placeholder="물품이나 동네를 검색해보세요."></li>
-                    <li class ="search-btn"> <button type="submit">채팅하기</button></li>
-                </div>
-
-            </ul>
-        </nav>
-
-    </header>
-
-
-    <main role="main" id="main">
-
-        <article class="main_arc">
-
-            <img src="./img/nearby_stores_hero_image.png" alt="집로고">
-
-
-            <span>
-                <h1 class ='location_txt1'>동네 이웃들이<br>자주 가는 동네 업체</h1>
-                우리동네 사람들이 <br> 이용하는 업체를 찾아보세요.
-            </span>
-        </article>
-
-        <div class="arc">
-            <article class="second_arc">
-                <h2>다양한 동네업체를 볼 수 있어요</h2>
-                <nav>
-                    <ul>
-                        <div class="second_menu">
-                            <li class="btn_all"><button type="button" onclick="changeColor(this)">전체1</button></li>
-                            <li class="btn_food"><button type="button" onclick="changeColor(this)">식당</button></li>
-                            <li class="btn_caffe"><button type="button" onclick="changeColor(this)">카페</button></li>
-                            <li class="btn_immigration"><button type="button" onclick="changeColor(this)">용달/이사</button></li>
-                            <li class="btn_beauty"><button type="button" onclick="changeColor(this)">뷰티/미용</button></li>
-                            <li class="btn_health"><button type="button" onclick="changeColor(this)">헬스/필라테스/요가</button></li>
-                        </div>
-                    </ul>
-                </nav>
-                <div class ="neighbor_co_box">
-                    <ul>
-                        <li class = loc_co><a href="#">
-
-                            <div class="box">
-                                <img class="profile1" src="./img/market_img/오떡순.jpeg">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>오떡순</b></span>
-                                    <span class ="location">신림동</span>
-                                </div>
-                                <span class="content">안녕하세요 신원시장 오떡순입니다 ^^ 많이 찾아주세요!</span>
-                                <span class="review">후기 312 · 단골 1919 · 떡볶이전문 </span>
-                            </div>
-                        </a></li>
-                        <li class = loc_co><a href="#">
-                            <div class="box">
-                                <img class="profile2" src="./img/market_img/드롭플라워.jpeg">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>드롭플라워-송파</b></span>
-                                    <span class ="location">가락1동</span>
-                                </div>
-                                <span class="content">✅ 신선한 생화를 저렴한 가격에 다양한 장소에서 픽업하실수 ... </span>
-                                <span class="review">후기 190 · 단골 1827 · 꽃집/꽃배달 </span>
-                            </div>
-                        </a></li>
-                        <li class = loc_co><a href="#">
-
-                            <div class="box">
-                                <img class="profile2" src="./img/market_img/윤씨네두부.jpeg">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>윤씨네 즉석두부</b></span>
-                                    <span class ="location">신림동</span>
-                                </div>
-                                <span class="content">관악시사시장에서 제일 젋은사장이 운영중인 곳입니다.!!</span>
-                                <span class="review">후기 433 · 단골 2023 · 즉석판매제조가공업 </span>
-                            </div>
-                        </a></li>
-                        <li class = loc_co><a href="#">
-                            <div class="box">
-                                <img class="profile2" src="./img/market_img/훈민용달.jpeg">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>훈민용달,이사,용달이..</b></span>
-                                    <span class ="location">화곡동</span>
-                                </div>
-                                <span class="content">당근마켓 후기 1등 단골1등 훈민용달,이사, 화물입니다!!!.</span>
-                                <span class="review">후기 2167 · 단골 4390 · 용달이사/화물 </span>
-                            </div>
-                        </a></li>
-                        <li class = loc_co_5><a href="#">
-                            <div class="box">
-                                <img class="profile2" src="./img/market_img/씨유네일.jpeg">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>씨유네일</b></span>
-                                    <span class ="location">독산동</span>
-                                </div>
-                                <span class="content">_see_u_nail  인스타👋🤎네일아트 3인동시 시술가능  </span>
-                                <span class="review">후기 405 · 단골 902 · 네일샵 </span>
-                            </div>
-                        </a></li>
-                        <li class = loc_co_6><a href="#">
-                            <div class="box">
-                                <img class="profile2" src="./img/market_img/도로플라워.jpeg">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>도로플라워</b></span>
-                                    <span class ="location">거제동</span>
-                                </div>
-                                <span class="content">도로행복 꽃 배송 연제구 동개구 부산진구 금정구 수영구...</span>
-                                <span class="review">
-                                    후기 480 · 단골 2754 · 꽃집/꽃배달
-                                </span>
-                            </div>
-                        </a></li>
-                        <li class = loc_co_6><a href="#">
-                            <div class="box">
-                                <img class="profile2" src="./img/market_img/영클린.jpeg">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>영클린 홈케어</b></span>
-                                    <span class ="location">서현동</span>
-                                </div>
-                                <span class="content">에어컨 청소 깨끗하게 해드려요 친환경 세재사용, 고압세척하여 곰...</span>
-                                <span class="review">
-                                    후기 803 · 단골 1873 · 에어컨청소
-                                </span>
-                            </div>
-                        </a></li>
-                        <li class = loc_co_6><a href="#">
-                            <div class="box">
-                                <img class="profile2" src="./img/market_img/방구석스트링어.jfif">
-                            </div>
-                            <div class="box2">
-                                <div class="market_title">
-                                    <span class ="title"><b>마포방구석스트링어</b></span>
-                                    <span class ="location">도화동</span>
-                                </div>
-                                <span class="content">* 테니스 스트링 교체 전문으로 합니다!!* 꼼꼼한 작업/적정 텐션...</span>
-                                <span class="review">
-                                    후기 91 · 단골 190 · 운동/경기용품
-                                </span>
-                            </div>
-                        </a></li>
-                    </ul>
-                </div>
-
-            </article>
-            <!-- ... 기존 HTML 코드 ... -->
-
-            <article class="third_arc">
-                <h2>동네 이웃이 남긴 후기를 찾아보세요</h2>
-                <ul>
-                    <li><a href="#">
-                        <div class="review_card">
-                            <div class="user_info">
-                                <img src="./img/user_img/user1.jfif" alt="User">
-                                <div>
-                                    <span class="user_name">미소<br /></span>
-                                    <span class="user_verification">삼산동 인증 8회</span>
-                                </div>
-                            </div>
-                            <p class="review_content">원장님이 인상도 좋으시고 자세하고 친절하게 설명해 주신 덕분에 편안하게 체험할 수 있었습니...</p>
-                            <div class="additional_info">
-                                <img src="./img/user_img/user1_content.jpeg" alt="Detail">
-                                <div>
-                                    <span class="detail_title">다이어트뷰티카페 미타임</span>
-                                    <span class="detail_stats">후기 20 · 단골 97 · 카페</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="review_card">
-                            <div class="user_info">
-                                <img src="./img/user_img/user-profile-icon.svg" alt="User">
-                                <div>
-                                    <span class="user_name">ABC쥬스맛있어<br /></span>
-                                    <span class="user_verification">연동 인증 0회</span>
-                                </div>
-                            </div>
-                            <p class="review_content">후기먼저 쓰고 세차받기! 대만족 미리 예상 + 세차 후 사진 업로드 완료 첫번쨰 비교사진 광이...</p>
-                            <div class="additional_info">
-                                <img src="./img/user_img/user2_content.jpeg" alt="Detail">
-                                <div>
-                                    <span class="detail_title">디테일링K</span>
-                                    <span class="detail_stats">후기 15 · 단골 252 · 광택전문</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="review_card">
-                            <div class="user_info">
-                                <img src="./img/user_img/user-profile-icon.svg" alt="User">
-                                <div>
-                                    <span class="user_name">제이<br /></span>
-                                    <span class="user_verification">물금읍 인증 12회</span>
-                                </div>
-                            </div>
-                            <p class="review_content">케어도 너무 시원하고 깔끔하게 해주시고 감각짱~^^ 담에 또뵐께요. 이따 꼭 식사 맛나게 하세...</p>
-                            <div class="additional_info">
-                                <img src="./img/user_img/user3_content.jpeg" alt="Detail">
-                                <div>
-                                    <span class="detail_title">양산 진짜 저렴한 네일~!!</span>
-                                    <span class="detail_stats">후기 119 · 단골 830 · 네일샵</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a></li>
-                    <li><a href="#">
-                        <div class="review_card">
-                            <div class="user_info">
-                                <img src="./img/user_img/user4.jfif" alt="User">
-                                <div>
-                                    <span class="user_name">철이율이맘<br /></span>
-                                    <span class="user_verification">율량,사천동 인증 20회</span>
-                                </div>
-                            </div>
-                            <p class="review_content">사장님 쎈스가 아주 돋비이는 하루였습니다. 꼼꼼히 체크체크 해주시고, 이러전런 댕댕이 이야기...</p>
-                            <div class="additional_info">
-                                <img src="./img/user_img/user4_content.jpeg" alt="Detail">
-                                <div>
-                                    <span class="detail_title">네,일해요</span>
-                                    <span class="detail_stats">후기 85 · 단골 427 · 네일샵</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a></li>
-
-                    <!-- ... 추가 li 항목들 ... -->
-                </ul>
-            </article>
-
-            <!-- ... 기존 HTML 코드 ... -->
-
-            <!--            <article class="third_arc">-->
-            <!--                <h2>동네 이웃이 남긴 후기를 찾아보세요</h2>-->
-            <!--                <ul>-->
-            <!--                    <li><a href="#">-->
-            <!--                    <article>-->
-            <!--                        <div class="box_top">-->
-            <!--                            <div class="box_img">-->
-            <!--                                <img class="profile2" src="./img/user_img/user1.jfif">-->
-            <!--                            </div>-->
-            <!--                            <div class ="3box_title">-->
-            <!--                                <span><b>미소</b></span>-->
-            <!--                                <span><b>단골</b></span>-->
-            <!--                            </div>-->
-            <!--                            <div class ="3box_location">-->
-            <!--                                <span>삼산동 인증 8회</span>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                        <p>원장님이 인상도 좋으시고 자세하고 친절하게 설명해주신 덕분에 편안하게 체험할 수 있었...</p>-->
-            <!--                        <div class="box_bottom">-->
-            <!--                            <div class="3box_bottom1">-->
-            <!--                                <img class="profile2" src="./img/user_img/user1_content.jpeg">-->
-            <!--                            </div>-->
-            <!--                            <div class="3box_bottom2">-->
-            <!--                                <span>다이어트뷰티카페 미타임</span>-->
-            <!--                                <span>후기 20 · 단골 97 · 카페</span>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </article>-->
-            <!--                </a></li>-->
-            <!--                    <li><a href="#">-->
-            <!--                        <article>-->
-            <!--                            <div class="box_top">-->
-            <!--                                <div class="box_img">-->
-            <!--                                    <img class="profile2" src="./img/user_img/user1.jfif">-->
-            <!--                                </div>-->
-            <!--                                <div class ="3box_title">-->
-            <!--                                    <span><b>미소</b></span>-->
-            <!--                                    <span><b>단골</b></span>-->
-            <!--                                </div>-->
-            <!--                                <div class ="3box_location">-->
-            <!--                                    <span>삼산동 인증 8회</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                            <p>원장님이 인상도 좋으시고 자세하고 친절하게 설명해주신 덕분에 편안하게 체험할 수 있었...</p>-->
-            <!--                            <div class="box_bottom">-->
-            <!--                                <div class="3box_bottom1">-->
-            <!--                                    <img class="profile2" src="./img/user_img/user1_content.jpeg">-->
-            <!--                                </div>-->
-            <!--                                <div class="3box_bottom2">-->
-            <!--                                    <span>다이어트뷰티카페 미타임</span>-->
-            <!--                                    <span>후기 20 · 단골 97 · 카페</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </article>-->
-            <!--                    </a></li>-->
-            <!--                    <li><a href="#">-->
-            <!--                        <article>-->
-            <!--                            <div class="box_top">-->
-            <!--                                <div class="box_img">-->
-            <!--                                    <img class="profile2" src="./img/user_img/user1.jfif">-->
-            <!--                                </div>-->
-            <!--                                <div class ="3box_title">-->
-            <!--                                    <span><b>미소</b></span>-->
-            <!--                                    <span><b>단골</b></span>-->
-            <!--                                </div>-->
-            <!--                                <div class ="3box_location">-->
-            <!--                                    <span>삼산동 인증 8회</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                            <p>원장님이 인상도 좋으시고 자세하고 친절하게 설명해주신 덕분에 편안하게 체험할 수 있었...</p>-->
-            <!--                            <div class="box_bottom">-->
-            <!--                                <div class="3box_bottom1">-->
-            <!--                                    <img class="profile2" src="./img/user_img/user1_content.jpeg">-->
-            <!--                                </div>-->
-            <!--                                <div class="3box_bottom2">-->
-            <!--                                    <span>다이어트뷰티카페 미타임</span>-->
-            <!--                                    <span>후기 20 · 단골 97 · 카페</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </article>-->
-            <!--                    </a></li>-->
-            <!--                    <li><a href="#">-->
-            <!--                        <article>-->
-            <!--                            <div class="box_top">-->
-            <!--                                <div class="box_img">-->
-            <!--                                    <img class="profile2" src="./img/user_img/user1.jfif">-->
-            <!--                                </div>-->
-            <!--                                <div class ="3box_title">-->
-            <!--                                    <span><b>미소</b></span>-->
-            <!--                                    <span><b>단골</b></span>-->
-            <!--                                </div>-->
-            <!--                                <div class ="3box_location">-->
-            <!--                                    <span>삼산동 인증 8회</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                            <p>원장님이 인상도 좋으시고 자세하고 친절하게 설명해주신 덕분에 편안하게 체험할 수 있었...</p>-->
-            <!--                            <div class="box_bottom">-->
-            <!--                                <div class="3box_bottom1">-->
-            <!--                                    <img class="profile2" src="./img/user_img/user1_content.jpeg">-->
-            <!--                                </div>-->
-            <!--                                <div class="3box_bottom2">-->
-            <!--                                    <span>다이어트뷰티카페 미타임</span>-->
-            <!--                                    <span>후기 20 · 단골 97 · 카페</span>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </article>-->
-            <!--                    </a></li>-->
-            <!--                </ul>-->
-            <!--            </article>-->
-
-
-
-            <article class="last_arc">
-                <div class="last_1">
-                    <img src="./img/ic_category_town.svg" alt="집로고2">
-                </div>
-                <div class="last_2">
-                    <span>
-                        <h3>업체를 운영하고 계신가요?</h3>
-                        당근에 등록하고 이웃에게 알려보세요
-                    </span>
-                </div>
-                <div class="last_3">
-                    <a href="https://business.daangn.com/" target="_blank"><b>비즈프로필 만들기</b></a>
-                </div>
-            </article>
+<div id="header">
+    <div id="header_wrap">
+        <div id="header_content">
+           <a href = "#"><img id = "logo" src="./logo.png" alt="당근마켓 로고"></a>
         </div>
-
-    </main>
-
-    <footer id="footer">
-
-        <div class="co_document">
-            <span>
-                <b>대표</b>
-                김용현, 황도현 |
-                <b>사업자번호</b>
-                375-87-00088
-            </span><br />
-            <span>
-                <b>직업정보제공사업 신고번호</b>
-                J1200020200016
-            </span><br />
-            <span>
-                <b>주소</b>
-                서울특별시 구로구 디지털로30길 28, 609호(당근서비스)
-            </span><br />
-            <span>
-                <b>전화</b>
-                1544-9796 |
-                <b>고객문의</b>
-                cs@daangnservice.com
-            </span><br />
-
-            <span class = "qna">
-                <a href="#"><b>제휴 문의</b></a>
-                <a href="#"><b>광고 문의</b></a>
-                <a href="#"><b>PR 문의</b></a>
-                <a href="#"><b>IR 문의</b></a>
-            </span><br />
-
+        <div id="header_content">
+            <a><button class="header_menu">중고거래</button></a>
         </div>
-        <div class ="co_sns">
-            <ul>
-                <li><a href ="https://www.facebook.com/daangn"><img src="./img/facebook_b.svg" alt="페북 로고" ></a></li>
-                <li><a href ="https://www.instagram.com/daangnmarket/"><img src="./img/instagram_b.svg" alt="인스타 로고" ></a></li>
-                <li><a href ="https://www.youtube.com/channel/UC8tsBsQBuF7QybxgLmStihA"><img src="./img/youtube_b.svg" alt="페북 로고" ></a></li>
-                <!--                <li><a href ="https://www.facebook.com/daangn"><img src="./img/facebook_b.svg" alt="페북 로고" ></a></li>-->
-            </ul>
+        <div id="header_content">
+            <button class="header_menu">동네업체</button>
         </div>
-
-        <div class = "foot_info">
-            <a href="#"><b>이용약관</b></a>
-            <a href="#"><b>개인정보처리방침</b></a>
-            <a href="#"><b>위치기반서비스 이용약관</b></a>
-            <a href="#"><b>이용자보호 비전과 계획</b></a>
-            <a href="#"><b>청소년보호정책</b></a>
+        <div id="header_content">
+            <button class="header_menu">알바</button>
         </div>
-
-
-
-
-        <!--        <div class="address">-->
-        <!--            <p>대전광역시 유성구 문지로 193 KAIST 문지캠퍼스 진리관 T326호</p>-->
-        <!--        </div>-->
-
-    </footer>
-
+        <div id="header_content">
+            <button class="header_menu">부동산 직거래</button>
+        </div>
+        <div id="header_content">
+            <button class="header_menu">중고차 직거래</button>
+        </div>
+        <div id="header_content">
+            <input class="search_input" type="text" placeholder="물품이나 동네를 검색해보세요">
+            <button type="submit" class="chat_button">채팅하기</button>
+        </div>
+    </div>
 </div>
-<script src="./js/menu_event.js"></script>
+<div id="body">
+
+    <div class="body_content_1">
+        <div class="body_wrap">
+            <h2 class="big">당신 근처의 <br>지역 생활 커뮤니티</h2>
+            <p class="small">동네라서 가능한 모든 것<br>당근에서 가까운 이웃과 함께해요.</p>
+            <div >
+                <div class="app_img">
+                    <div class="app_download_1">
+                        <img src="./img/google.png">
+                        <p>Google Play</p>
+                    </div>
+                    <div class="app_download_2">
+                        <img src="./img/apple.png">
+                        <p>App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_wrap">
+            <img class="image_1" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-top-e765d561ee9df7f5ab897f622b8b5a35aaa70314f734e097ea70e6c83bdd73f1.webp" width="700" height="auto">
+        </div>
+    </div>
+
+    <div class="body_content_2">
+
+        <div class="body_wrap">
+            <img class="image_2" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-1-c84dd43a3a50742bc296bd36e8b9b1c4a487b8d36aaf67e7f90ecce80201cf60.webp " width="700" height="auto">
+        </div>
+        <div class="body_wrap">
+            <h2 class="medium">믿을만한 <br>이웃 간 중고거래</h2>
+            <p class="small_2">동네 주민들과 가깝고 따뜻한 거래를 <br>지금 경험해보세요.</p>
+            <button class="gray_button" date-url = "https://www.example1.com">인기매물 보기</button>
+            <button class="gray_button" date-url = "https://www.example2.com">믿을 수 있는 중고거래</button>
+        </div>
+    </div>
+
+    <div class="body_content_3">
+        <div class="body_wrap">
+            <h2 class="medium_2">이웃만 아는 <br>동네 정보와 이야기</h2>
+            <p class="small_3">우리 동네의 다양한 정보와 이야기를 <br>공감과 댓글로 나누어요</p>
+            <ul class="home-story-list">
+                <li class="home-story-list-item">
+                    <div class="icon-story icon-story-01"></div>
+                    <div class="text-s text-bold mt-3 mb-2">동네모임</div>
+                    <div class="item-desc">근처 이웃들과 동네<br>이야기를 해보세요.</div>
+                </li>
+                <li class="home-story-list-item">
+                    <div class="icon-story icon-story-02"></div>
+                    <div class="text-s text-bold mt-3 mb-2">동네질문</div>
+                    <div class="item-desc">궁금한 게 있을 땐<br>이웃에 물어보세요.</div>
+                </li>
+                <li class="home-story-list-item">
+                    <div class="icon-story icon-story-03"></div>
+                    <div class="text-s text-bold mt-3 mb-2">동네분실센터</div>
+                    <div class="item-desc">무언가를 잃어버렸다면<br>글을 올려보세요.</div>
+                </li>
+            </ul>
+        </div>
+        <div class="body_wrap">
+            <img class="image_3" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-2-78a84106155b4b2c341b6425515a90782dc08a6f443ba0bb622700ef788d2e19.webp " width="700" height="auto">
+        </div>
+    </div>
+
+    <div class="body_content_2">
+
+        <div class="body_wrap">
+            <img class="image_4" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/rebranded-image-3-fa126bf72868e1a60f6a67dde54d8a39d51e70ee5df415ebf0ab3175e23d8ee1.webp " width="700" height="auto">
+        </div>
+        <div class="body_wrap">
+            <h2 class="medium">걸어서 10분!<br>동네 알바 구하기</h2>
+            <p class="small_2" style="margin-left: 2.5rem;">당근하듯 쉽고, 편하게<br>당근 알바로 동네 알바를 구할 수 있어요.</p>
+            <button class="gray_button" style="margin-top: 20px;">내근처 알바 보기</button>
+
+        </div>
+    </div>
+
+    <div class="body_content_3" style="background-color: #fbf7f2">
+        <div class="body_wrap" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2 class="medium_2">내 근처에서 찾는 <br>동네업체</h2>
+            <p class="small_3" style="margin-left: 8.0rem;">이웃들의 추천 후기를 확인하고 <br>동네 곳곳의 업체들을 찾을 수 있어요.</p>
+            <button class="gray_button" style="margin-top: 50px; margin-left: 300px;">당근 동네업체 보기</button>
+        </div>
+        <div class="body_wrap">
+            <img class="image_5" src="https://d1unjqcospf8gs.cloudfront.net/assets/home/main/3x/image-business-cc45c805de4a639e259aea606640042d09bccf358e8d20f50af325dd994aceef.webp " width="700" height="auto">
+        </div>
+    </div>
+
+    <section class="info">
+        <div class="info1">
+            <ul>
+                <li>중고거래</li>
+                <li>동네가게</li>
+                <li>당근알바</li>
+                <li>부동산 직거래</li>
+                <li>중고차 직거래</li>
+            </ul>
+            <ul>
+                <li>당근비즈니스</li>
+                <li>채팅하기</li>
+            </ul>
+            <ul>
+                <li>자주 묻는 질문</li>
+                <li>회사 소개</li>
+                <li>인재 채용</li>
+            </ul>
+        </div>
+        <div >
+            <p class="app_tit">당근 앱 다운로드</p>
+            <div>
+                <div class="app_img_2">
+                    <div class="app_download_3">
+                        <img src="./img/google.png">
+                        <p>Google Play</p>
+                    </div>
+                    <div class="app_download_4">
+                        <img src="./img/apple.png">
+                        <p>App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
+<footer class="footer_box">
+    <div class="footer">
+        <div class="sns_lan">
+            <a href="https://www.facebook.com/daangn" target="_blank" class="fa-brands fa-facebook"<i></i></a>
+            <a href="https://www.instagram.com/daangnmarket/" target="_blank" class="fa-brands fa-instagram"<i></i></a>
+            <a href="https://www.youtube.com/channel/UC8tsBsQBuF7QybxgLmStihA" target="_blank" class="fa-brands fa-youtube"<i></i></a>
+
+            <select>
+                <option>한국</option>
+                <option value="https://uk.karrotmarket.com">영국</option>
+                <option value="https://ca.karrotmarket.com">캐나다</option>
+                <option value="https://us.karrotmarket.com">미국</option>
+                <option value="https://jp.karrotmarket.com">일본</option>
+            </select>
+        </div>
+        <div>
+            <p class="info2">
+                <span class="txt_em">대표</span> 김용현, 황도연 | <span class="txt_em">사업자번호</span> 375-87-00088<br>
+                <span class="txt_em">직업정보제공사업 신고번호</span> 2016-서울서초-0051<br>
+                <span class="txt_em">주소</span> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)<br>
+                <span class="txt_em">전화</span> 1544-9796 | <span class="txt_em">고객문의</span> cs@daangnservice.com
+            </p>
+            <div class="txt_em_1">
+                <a href="#">제휴 문의</a>
+                <a href="#">광고 문의</a>
+                <a href="#">PR 문의</a>
+                <a href="#">IR 문의</a>
+            </div>
+            <div class="txt_em_1">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">위치기반서비스 이용약관</a>
+                <a href="#">이용자보호 비전과 계획</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>

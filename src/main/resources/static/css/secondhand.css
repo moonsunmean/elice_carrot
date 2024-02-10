@@ -60,10 +60,6 @@ header {
     font-style: normal;
     margin-right: 1.875rem;
 }
-#header_div_nav li.active_page a {
-
-    color: #ff6f0f;
-}
 #header_div_nav li:nth-of-type(1) a {}
 #header_div_nav li:nth-of-type(2) a {}
 #header_div_nav li:nth-of-type(3) a {}
@@ -124,7 +120,7 @@ header {
 }
 
 body{
-    width: 100vw;
+    width: 100vw; 
     overflow-x: hidden;
 }
 
@@ -224,7 +220,7 @@ body{
 	display: flex;
 	justify-content: center;
 }
-
+ 
 .more_item_btn {
 	border: none;
 	background-color: white;
@@ -242,7 +238,7 @@ body{
     background-color: #F8F9FA;
     border-bottom: solid 1px #E2E2E2;
 }
-
+ 
 .keyword_title{
 	border: none;
 	background-color: #F8F9FA;
@@ -379,4 +375,111 @@ body{
 .country {
     outline: none;
     border: none;
+}
+
+/* footer */
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.info1 {
+    display: flex;
+}
+
+.info1 ul {
+    list-style-type: none;
+    padding: 20px;
+    line-height: 2em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #757980;
+}
+
+.footer_box {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 50%;
+    border-top: 1px solid#eaebee;
+    padding: 40px 0;
+}
+
+.txt_em {
+    color: #868b94;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.info2 {
+    color: #868b94;
+    font-size: 14px;
+    word-spacing: 5px;
+    padding-left: 20px;
+}
+
+.txt_em_1 {
+    color: #868b94;
+    font-size: 14px;
+    font-weight: 700;
+    word-spacing: 5px;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.txt_em_1 a{
+    text-decoration: none;
+    color: #6d7076;
+}
+
+.sns_lan {
+    margin-right: 20px;
+    float: right;
+}
+
+.fa-brands {
+    height: 15px;
+    filter: grayscale(100%);
+}
+
+.app_tit {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.app_img_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'SUITE-Regular';
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 30px;
+}
+.app_img_2 img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.app_download_1 {
+    margin-right: 10px;
+}
+.app_download_2 {
+    margin-left: 10px;
+}
+.app_download_3 {
+    margin-left: 10px;
+}
+.app_download_4 {
+    margin-left: 10px;
+}
+
+.image_1{
+    margin-bottom: 60px;
 }

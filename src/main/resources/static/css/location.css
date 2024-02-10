@@ -464,50 +464,126 @@ button:active {
 /*****************/
 /** footer CSS **/
 /***************/
-#footer{
-    width:100%;
-    margin: 40px 350px 0 350px;
-}
-#footer div{
-    width:50%;
-}
-#footer.co_document{
-    border-top: 1px solid
-    padding-top : 50px;
-}
-.co_document span{
-    padding: 5px 0px 0px 0px;
-    font-size: 13px;
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0x auto;
+    padding: 70px 0;
 }
 
-.co_document span.qna{
-   display: block;
-    height:30px;
-    padding: 0px 0px 0px 0px;
-    margin-top:20px;
-    font-size: 13px;
+.info1 {
+    display: flex;
 }
 
-.co_document span.qna a{
-    padding-right: 8px;
+[class^='app_download'] {
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 237, 239);
+    padding: 15px;
+    border-radius: 15px;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.co_sns img{
-    float:left;
-    width:5%;
-    height:25px;
+[class^='app_download']:hover {
+    background-color: rgb(200, 202, 204);
 }
 
-.foot_info{
-    display: block;
-    height:30px;
-    width:80%;
-    padding: 0px 0px 10px 0px;
-    font-size: 13px;
+[class^='app_download']:active {
+    transform: scale(0.95);
 }
-.foot_info a{
-    padding-right: 8px;
+
+.app_tit {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 40px;
 }
+.app_img_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'SUITE-Regular';
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 30px;
+}
+.app_img_2 img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.app_download_3 {
+    margin-left: 10px;
+}
+.app_download_4 {
+    margin-left: 10px;
+}
+
+.info1 ul {
+    list-style-type: none;
+    padding: 20px;
+    line-height: 2em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #757980;
+}
+
+.footer_box {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 50%;
+    border-top: 1px solid #eaebee;
+    padding: 40px 0;
+}
+
+.txt_em {
+    color: #868b94;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.info2 {
+    color: #868b94;
+    font-size: 14px;
+    word-spacing: 5px;
+    padding-left: 20px;
+}
+
+.txt_em_1 {
+    color: #868b94;
+    font-size: 14px;
+    font-weight: 700;
+    word-spacing: 5px;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.txt_em_1 a{
+    text-decoration: none;
+    color: #6d7076;
+}
+
+.sns_lan {
+    margin-right: 20px;
+    float: right;
+}
+
+.fa-brands {
+    height: 15px;
+    filter: grayscale(100%);
+}
+
+
 
 
 

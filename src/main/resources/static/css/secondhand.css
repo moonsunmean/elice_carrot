@@ -1,3 +1,12 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+ol, ul {
+    list-style: none;
+}
+
+
 header {
     background-color: #fff;
     color: #212124;
@@ -63,7 +72,9 @@ header {
 #header_div_nav li:nth-of-type(1) a {}
 #header_div_nav li:nth-of-type(2) a {}
 #header_div_nav li:nth-of-type(3) a {}
-
+#header_div_nav li.active_page a {
+    color: #ff6f0f;
+}
 #search_div {
     display: flex;
     justify-content: center;
@@ -128,6 +139,7 @@ body{
     display: none;
 }
 
+
 /*메뉴*/
 
 
@@ -137,6 +149,7 @@ body{
     height: 315px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
 }
 
 .banner_txt {

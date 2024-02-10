@@ -21,9 +21,9 @@ public class StartVeiwController {
         return "secondhand";
     }
 
-    @GetMapping("/jobs")
+    @GetMapping("/alba")
     public String getjobsForm(){
-        return "jobs";
+        return "alba";
     }
 
 

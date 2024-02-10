@@ -316,6 +316,14 @@ body {
 p {
     margin: 0;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul {
+    list-style: none;
+}
 
 header {
     background-color: #fff;
@@ -378,6 +386,13 @@ header {
     color: #4d5159;
     font-style: normal;
     margin-right: 1.875rem;
+}
+
+#header_div_nav li.active_page a {
+    color: #ff6f0f;
+}
+#header_div_nav li.active_page a span{
+    color: #ff6f0f;
 }
 #header_div_nav li:nth-of-type(1) a {}
 #header_div_nav li:nth-of-type(2) a {}
@@ -626,6 +641,79 @@ header {
     font-weight: 700;
 }
 
+
+
+/******/
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0x auto;
+    padding: 70px 0;
+}
+
+.info1 {
+    display: flex;
+}
+
+[class^='app_download'] {
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 237, 239);
+    padding: 15px;
+    border-radius: 15px;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+[class^='app_download']:hover {
+    background-color: rgb(200, 202, 204);
+}
+
+[class^='app_download']:active {
+    transform: scale(0.95);
+}
+
+.app_tit {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.app_img_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'SUITE-Regular';
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 30px;
+}
+.app_img_2 img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.app_download_3 {
+    margin-left: 10px;
+}
+.app_download_4 {
+    margin-left: 10px;
+}
+
+.info1 ul {
+    list-style-type: none;
+    padding: 20px;
+    line-height: 2em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #757980;
+}
 .footer_box {
     display: flex;
     justify-content: center;
